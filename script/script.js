@@ -1,4 +1,4 @@
-document.getElementById("hello").innerHTML = "Привет, JavaScript!"
+document.getElementById("hello").innerText = "Привет, JavaScript!"
 
 const array=[{words:"word"},
 {words:"tiger"},
