@@ -16,7 +16,7 @@ function createdList(title){
 
   container.append(listNode);
   listNode.append(wordNode);
-    return(container)
+  return(container)
 }
 
 function createPoste(obj){
@@ -24,6 +24,21 @@ function createPoste(obj){
   obj.forEach(({words})=>dom.append(createdList(words)));
   }
   createPoste(array);
+
+
+  const mas=["word","tiger","key","hello","symbol"];
+  
+  function nummerList(mas){
+    const ListNode = document.createElement("ol")
+      mas.forEach(elem =>{
+          const PunktNode=document.createElement("li");
+          PunktNode.innerText=elem;
+          ListNode.append(PunktNode);
+      })
+  return ListNode;
+}
+const root= document.querySelector("#dom");
+root.append(nummerList(mas))
 
 
   const array1=[
