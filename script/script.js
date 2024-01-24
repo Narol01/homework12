@@ -19,14 +19,14 @@ function createdList(title){
   return(container)
 }
 
-function createPoste(obj){
+  function createPoste(obj){
   const dom=document.querySelector('#dom')
   obj.forEach(({words})=>dom.append(createdList(words)));
   }
   createPoste(array);
 
-
   const mas=["word","tiger","key","hello","symbol"];
+ 
   
   function nummerList(mas){
     const ListNode = document.createElement("ol")
@@ -36,7 +36,7 @@ function createPoste(obj){
           ListNode.append(PunktNode);
       })
   return ListNode;
-}
+  }
 const root= document.querySelector("#dom");
 root.append(nummerList(mas))
 
